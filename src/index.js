@@ -14,8 +14,8 @@ const paths = {
 	dataSchema: path.join(cwd, 'data-schema.json')
 };
 
-paths.dataJson = path.join(paths.data, 'data.snippets');
-paths.dataFormattedJson = path.join(paths.data, 'data-formatted.snippets');
+paths.dataJson = path.join(paths.data, 'data.json');
+paths.dataFormattedJson = path.join(paths.data, 'data-formatted.json');
 paths.readmeTemplate = path.join(paths.templates, 'README-template.md');
 
 
