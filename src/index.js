@@ -10,13 +10,13 @@ const paths = {
 	snippets: path.join(cwd, "snippets"),
 	data: path.join(cwd, "data"),
 	templates: path.join(cwd, "templates"),
-	readmePath:  path.join(cwd, 'data-schema.json')
+	readmePath: path.join(cwd, 'README.md'),
+	dataSchema: path.join(cwd, 'data-schema.json')
 };
 
 paths.dataJson = path.join(paths.data, 'data.snippets');
 paths.dataFormattedJson = path.join(paths.data, 'data-formatted.snippets');
 paths.readmeTemplate = path.join(paths.templates, 'README-template.md');
-paths.dataSchema = path.join(paths.data, 'data-schema.json');
 
 
 // Generate JSON
