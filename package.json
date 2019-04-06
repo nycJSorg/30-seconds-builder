@@ -1,0 +1,30 @@
+{
+  "name": "30-seconds-builder",
+  "version": "0.0.2",
+  "description": "",
+  "bin": {
+    "thirty-seconds": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nycJSorg/30-seconds-builder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nycJSorg/30-seconds-builder/issues"
+  },
+  "homepage": "https://github.com/nycJSorg/30-seconds-builder#readme",
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "gray-matter": "^4.0.2",
+    "handlebars": "^4.1.1",
+    "handlebars-group-by": "^1.0.1",
+    "json-pointer": "^0.6.0",
+    "slugify": "^1.3.4"
+  }
+}
