@@ -1,6 +1,6 @@
 {
   "name": "md-to-json-snippet-generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "bin": {
     "md-to-json-snippet-generator": "src/index.js"
