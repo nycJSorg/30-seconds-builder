@@ -2,9 +2,9 @@ const Ajv = require('ajv');
 const pointer = require('json-pointer');
 const ajv = new Ajv({jsonPointers: true});
 
-const validate = ajv.compile(schema);
 
 module.exports = function validateSnippets(snippets, schema) {
+	const validate = ajv.compile(schema);
 	const errors = [];
 
 	snippets.forEach(snippet => {
