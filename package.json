@@ -1,9 +1,9 @@
 {
-  "name": "30-seconds-builder",
+  "name": "md-to-json-snippet-generator",
   "version": "0.0.2",
   "description": "",
   "bin": {
-    "thirty-seconds": "src/index.js"
+    "md-to-json-snippet-generator": "src/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
