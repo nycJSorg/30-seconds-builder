@@ -1,10 +1,10 @@
 const Ajv = require('ajv');
 const pointer = require('json-pointer');
 const ajv = new Ajv({jsonPointers: true});
-const schema = require('../../30-seconds-of-angular/scripts/data-schema').schema;
+
 const validate = ajv.compile(schema);
 
-module.exports = function validateSnippets(snippets) {
+module.exports = function validateSnippets(snippets, schema) {
 	const errors = [];
 
 	snippets.forEach(snippet => {

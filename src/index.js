@@ -15,13 +15,14 @@ const paths = {
 paths.dataJson = path.join(paths.data, 'data.snippets');
 paths.dataFormattedJson = path.join(paths.data, 'data-formatted.snippets');
 paths.readmeTemplate = path.join(paths.templates, 'README-template.md');
-
+paths.dataSchema = path.join(paths.data, 'data-schema.json');
 
 // Generate JSON
 const snippets = mdFolderToJSON(paths.snippets);
 
 // Validate JSON
-validateSnippets(snippets);
+const schema = require(paths.dataSchema).schema;
+validateSnippets(snippets, schema);
 
 // Write JSON
 console.log(`generated ${snippets.length} snippets`);
