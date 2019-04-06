@@ -9,14 +9,15 @@ const cwd = process.cwd();
 const paths = {
 	snippets: path.join(cwd, "snippets"),
 	data: path.join(cwd, "data"),
-	templates: path.join(cwd, "templates"),
+	config: path.join(cwd, "config"),
 	readmePath: path.join(cwd, 'README.md'),
-	dataSchema: path.join(cwd, 'data-schema.json')
+
 };
 
+paths.dataSchema = path.join(paths.config, 'data-schema.json');
 paths.dataJson = path.join(paths.data, 'data.json');
 paths.dataFormattedJson = path.join(paths.data, 'data-formatted.json');
-paths.readmeTemplate = path.join(paths.templates, 'README-template.md');
+paths.readmeTemplate = path.join(paths.config, 'README-template.md');
 
 
 // Generate JSON
